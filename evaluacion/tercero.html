@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+
+    <nav class="navbar navbar-expand-lg  navbar-success bg-dark">
+        <button class="navbar-toggler" class="btn btn-outline-danger" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+         <img src="data:image/jpeg;base64,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" height="100px">
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <a class="navbar-brand" href="#" > <img src="data:image/jpeg;base64,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" height="150px"> </a>
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" href="evaluacion.html">Inicio<span class="sr-only">(current)</span></a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>  <h1 style="color: honeydew; background: grey;">Programación web</h1>
+      <h1 style="color: honeydew; background: grey;">PRW-ES 7A & 7B</h1>
+          <!--acordion-->
+            <div class="accordion" id="accordionExample">
+              <h1>Programa de estudio</h1>
+              <div class="card">
+                <div class="card-header" id="headMa">
+             
+                  <h2 class="mb-0">
+                    <button class="btn btn-outline-success" type="button" data-toggle="collapse" data-target="#collapseMa" aria-expanded="true" aria-controls="collapseMa">
+                     Manual de la asignatura
+                    </button>
+                  </h2>
+                </div>
+                <div id="collapseMa" class="collapse" aria-labelledby="headMa" data-parent="#accordionExample">
+                  <div class="card-body">
+                    <div class="content padding10" style="display: block;">
+                      <h3 style="color: coral;">Clave</h3>
+      <p class="align-justify" style="color: black;">PRW-ES 7A y 7B</p>
+      
+      <h3 style="color: coral;">Propósito de la materia:</h3>
+      <p class="align-justify" style="color: black;">El alumno implementará sistemas empleando tecnologías web para extender la disponibilidad y alcances de los servicios de la organización.</p>					</div>
+                  </div>
+                </div>
+                <!-----acordion---------->
+      
+                 <!--acordion-->
+            
+              <div class="accordion" id="accordionExample">
+                <div class="card">
+                  <div class="card-header" id="headingEv">
+                    <h2 class="mb-0">
+                      <button class="btn btn-outline-success" type="button" data-toggle="collapse" data-target="#collapseEv" aria-expanded="true" aria-controls="collapseEv">
+                        Evaluación
+                      </button>
+                    </h2>
+                  </div>
+                  <div id="collapseEv" class="collapse" aria-labelledby="headingEv" data-parent="#accordionExample">
+                    <div class="card-body">
+                      <div class="content padding10" style="display: block;">
+                        <div class="example" data-text="Ordinario">
+        <button class="shortcut-button bg-cyan bg-active-darkBlue fg-white">
+                        <span class="icon mif-folder-open"></span>
+                        <span class="title">Saber</span>
+                        <span class="badge">30%</span>
+        </button>
+        <button class="shortcut-button bg-white bg-active-darkBlue fg-dark">
+                        <span class="icon mif-plus"></span>
+                        <span class="title">Más</span>
+                        <span class="badge">+</span>
+        </button>
+        <button class="shortcut-button bg-cyan bg-active-darkBlue fg-white">
+                        <span class="icon mif-file-text"></span>
+                        <span class="title">Saber Hacer</span>
+                        <span class="badge">40%</span>
+        </button>
+        <button class="shortcut-button bg-white bg-active-darkBlue fg-dark">
+                        <span class="icon mif-plus"></span>
+                        <span class="title">Más</span>
+                        <span class="badge">+</span>
+        </button>
+        <button class="shortcut-button bg-cyan bg-active-darkBlue fg-white">
+                        <span class="icon mif-file-text"></span>
+                        <span class="title">Ser</span>
+                        <span class="badge">30%</span>
+        </button>
+        <button class="shortcut-button bg-white bg-active-darkBlue fg-dark">
+                        <span class="icon mif-arrow-right"></span>
+                        <span class="title">Igual</span>
+                        <span class="badge">=</span>
+        </button>
+        <button class="shortcut-button bg-cyan bg-active-darkBlue fg-white">
+                        <span class="icon mif-rocket"></span>
+                        <span class="title">Cien Porciento</span>
+                        <span class="badge">100%</span>
+        </button>
+      </div>
+      
+      
+      <div class="example" data-text="Remedial">
+        <button class="shortcut-button bg-cyan bg-active-darkBlue fg-white">
+                        <span class="icon mif-folder-open"></span>
+                        <span class="title">Saber</span>
+                        <span class="badge">30%</span>
+        </button>
+        <button class="shortcut-button bg-white bg-active-darkBlue fg-dark">
+                        <span class="icon mif-plus"></span>
+                        <span class="title">Más</span>
+                        <span class="badge">+</span>
+        </button>
+        <button class="shortcut-button bg-cyan bg-active-darkBlue fg-white">
+                        <span class="icon mif-file-text"></span>
+                        <span class="title">Saber Hacer</span>
+                        <span class="badge">40%</span>
+        </button>
+        <button class="shortcut-button bg-white bg-active-darkBlue fg-dark">
+                        <span class="icon mif-plus"></span>
+                        <span class="title">Más</span>
+                        <span class="badge">+</span>
+        </button>
+        <button class="shortcut-button bg-cyan bg-active-darkBlue fg-white">
+                        <span class="icon mif-file-text"></span>
+                        <span class="title">Ser</span>
+                        <span class="badge">0%</span>
+        </button>
+        <button class="shortcut-button bg-white bg-active-darkBlue fg-dark">
+                        <span class="icon mif-arrow-right"></span>
+                        <span class="title">Igual</span>
+                        <span class="badge">=</span>
+        </button>
+        <button class="shortcut-button bg-cyan bg-active-darkBlue fg-white">
+                        <span class="icon mif-rocket"></span>
+                        <span class="title">Ochenta Porciento</span>
+                        <span class="badge">70%</span>
+        </button>
+      </div>
+      <br>
+      
+      
+      <h3 style="color: coral;">Evaluaciones por Unidad</h3>
+      <div class="treeview" data-role="treeview">
+        <ul>
+      
+            <li class="node active" style="color: black;">
+                <span class="leaf">Unidades</span>
+                <span class="node-toggle"></span>
+                <ul>
+                    <li class="">
+                        <span class="leaf">Unidad I - Introducción a los sistemas web</span>
+                    </li>
+                    <li class="">
+                        <span class="leaf">Unidad II - Programación del lado del cliente</span>
+                    </li>
+                    <li class="">
+                        <span class="leaf">Unidad III - Programación del lado del servidor</span>
+                    </li>
+                    <li class="">
+                        <span class="leaf">Unidad IV - Autenticación de usuarios</span>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+      </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-----acordion---------->
+      
+                     <!--acordion------>
+             
+              <div class="accordion" id="accordionExample">
+                <div class="card">
+                  <div class="card-header" id="headingBi">
+                    <h2 class="mb-0">
+                      <button class="btn btn-outline-success" type="button" data-toggle="collapse" data-target="#collapseBi" aria-expanded="true" aria-controls="collapseBi">
+                      Bibliografía
+                      </button>
+                    </h2>
+                  </div>
+                  <div id="collapseBi" class="collapse" aria-labelledby="headingBi" data-parent="#accordionExample">
+                    <div class="card-body">
+                      <div class="content padding10" style="display: block;" style="color: black;">
+                        <p class="align-justify" style="color: black;">
+      Steve Prettyman	2016	Learn PHP 7, Object-Oriented Modular Programming using HTML5, CSS3, JavaScript, 
+      </p>
+      <p class="align-justify" style="color: black;">
+      XML, JSON and MySQL	Stone Mountain, Georgia USA	Apress	978148421729-0
+      </p>
+      <p class="align-justify" style="color: black;">
+      Williams Sanders	2013	Learning PHP Design Patterns	United States	O' Reilly	9781449344917
+      </p>
+      <p class="align-justify" style="color: black;">
+      Antonio Melé	2015	Django by example	 	Packt Pub	9781784391911
+      </p>
+      <p class="align-justify" style="color: black;">
+      Pedro Clemente Bonilla	2014	Diseño Web Adaptativo	España	Anaya Multimedia	9788441533899
+      </p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-----acordion---------->
+
+                  <!-------------------------------->
+            <div class="accordion" id="accordionExample">
+              <h4>UNIDADES</h4>
+              <div class="card">
+                <div class="card-header" id="headingOne">
+                  <h2 class="mb-0">
+                    <button class="btn btn-outline-success" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Unidad I - Algoritmos
+                    </button>
+                  </h2>
+                </div>
+                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                  <div class="card-body">
+           
+                  </div>
+                </div>
+                <!-----acordion---------->
+                
+                 <!--acordion-->
+          <div data-spy="scroll" data-target="#navbar-example2" data-offset="0">
+      
+            <div class="accordion" id="accordionExample">
+              <div class="card">
+                <div class="card-header" id="headingTwo">
+                  <h2 class="mb-0">
+                    <button class="btn btn-outline-success" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                     Unidad II - Estructura de control de algortimos
+                    </button>
+                  </h2>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                  <div class="card-body">
+                   
+                  </div>
+                </div>
+                <!-----acordion---------->
+    
+                 <!--acordion-->
+          <div data-spy="scroll" data-target="#navbar-example2" data-offset="0">
+          
+            <div class="accordion" id="accordionExample">
+              <div class="card">
+                <div class="card-header" id="headingThree">
+                  <h2 class="mb-0">
+                    <button class="btn btn-outline-success" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                    Unidad III - Metodología del desarrollo de programas
+                    </button>
+                  </h2>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                  <div class="card-body">
+                   
+                  </div>
+                </div>
+                <!-----acordion---------->
+
+
+</body>
+</html>

@@ -1,0 +1,1734 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WICHOLANDIA</title>
+   <!--- <link rel="stylesheet" href="/public/ButsTraP/css/bootstrap.min.css">-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel ="stylesheet" href="diseño.css">
+</head>
+<body>
+  <!---  <script src="/public/ButsTraP/js/jquery-3.5.1.min.js"></script>-->
+    <script src="js/jquery-3.5.1.min.js"></script>
+  <!---  <script src="/public/ButsTraP/js/bootstrap.min.js"></script>-->
+    <script src="js/bootstrap.min.js"></script>
+
+    <nav class="navbar navbar-expand-lg  navbar-success bg-dark">
+      <button class="navbar-toggler" class="btn btn-outline-danger" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+       <!--- <img src="http://tolinware.com/resources/tolinware-mayo-2020.png" height="50px">-->  
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <a class="navbar-brand" href="#" > <img src="data:image/jpeg;base64,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" height="150px"> </a>
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item active">
+            <a class="nav-link" href="#acerca">Acerca de<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#reglamento">Reglamento</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="true">Carreras</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#ITI">ITI</a>
+              <div role="separator" class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#mecatronica">Mecatrónica</a>
+              </div>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+      <!------------------------>   
+      
+      <!----------------------------------------->
+      <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleCaptions" data-slide-to="1" class="active"></li>
+          <li data-target="#carouselExampleCaptions" data-slide-to="2" class="active"></li>
+          <li data-target="#carouselExampleCaptions" data-slide-to="3" class="active"></li>
+          <li data-target="#carouselExampleCaptions" data-slide-to="4" class="active"></li>
+          
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://www.prepaitel.com/wp-content/uploads/2018/12/online-3412498_640-compressor.jpg" class="d-block w-100" alt="te falta internet homs" width="100%" height="481px">
+            <div class="carousel-caption d-none d-md-block">           
+              <h5 style="background-color: grey;">Imagen 1</h5>
+              <p style="background-color: grey;">Clases En Linea</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://tec.mx/sites/default/files/styles/header_full/public/2020-03/clases-enlinea2.jpg?itok=r6XELjl_" class="d-block w-100" alt="te falta internet homs" width="100%" height="481px">
+            <div class="carousel-caption d-none d-md-block">
+              <h5 style="background-color: grey;">Imagen 2</h5>
+             <b> <p style="background-color: grey;">ZOOM</p></b>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://www.elfinanciero.com.mx/uploads/2020/08/17/cefb500a9f1597675625_standard_desktop_medium_retina.webp" class="d-block w-100" alt="te falta internet homs" width="80%" height="481px">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Imagen 3</h5>
+              <p>Estudiante en clase</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsFMWIDwjG7jYbSWjgPQplR6mm00FaDmlmyQ&usqp=CAU" class="d-block w-100" alt="te falta internet homs" width="100%" height="481px">
+            <div class="carousel-caption d-none d-md-block">
+              <h5 style="color: blue;">Imagen 4</h5>
+              <p>Alumnos menores :,v</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://i2.wp.com/noticieros.televisa.com/wp-content/uploads/2020/08/como-tomar-clases-virtuales-por-internet.jpg?fit=1080%2C609&ssl=1" class="d-block w-100" alt="te falta internet homs" width="100%" height="481px">
+            <div class="carousel-caption d-none d-md-block">
+              <h5 style="color: rgb(0, 4, 255);">Imagen 5</h5>
+              <p style="color: red;">Participacion en clase</p>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only" class="h1">Next</span>
+        </a>
+      </div>
+      <!-------------------------->
+      <h1 style="color: honeydew; background: grey;" class="text-md-center">CARRERAS</h1>
+      <!--acordion-->
+      <div data-spy="scroll" data-target="#navbar-example2" data-offset="0">
+        
+        <div class="accordion" id="accordionExample">
+          <div class="card">
+            <div class="card-header" id="headingOne">
+              <h2 class="mb-0">
+                <h4 id="ITI">Ingeniería En Tecnologías De La Información</h4>
+                <button class="btn btn-outline-success" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  1er cuatrimestre: Introducción a la programación
+                </button>
+              </h2>
+            </div>
+            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+              <div class="card-body">
+        <a href="1er.html"><button class="btn btn-outline-danger" style="color:white">Click</button></a>
+              </div>
+            </div>
+            <!-----acordion---------->
+            
+             <!--acordion-->
+      <div data-spy="scroll" data-target="#navbar-example2" data-offset="0">
+  
+        <div class="accordion" id="accordionExample">
+          <div class="card">
+            <div class="card-header" id="headingTwo">
+              <h2 class="mb-0">
+                <button class="btn btn-outline-success" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                  2do cuatrimestre: Arquitectura de computadoras
+                </button>
+              </h2>
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+              <div class="card-body">
+                <a href="2nd.html"><button class="btn btn-outline-danger" style="color:white">Click</button></a>
+              </div>
+            </div>
+            <!-----acordion---------->
+
+             <!--acordion-->
+      <div data-spy="scroll" data-target="#navbar-example2" data-offset="0">
+      
+        <div class="accordion" id="accordionExample">
+          <div class="card">
+            <div class="card-header" id="headingThree">
+              <h2 class="mb-0">
+                <button class="btn btn-outline-success" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                  3er cuatrimestre: Programación
+                </button>
+              </h2>
+            </div>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+              <div class="card-body">
+                <a href="3er.html"><button class="btn btn-outline-danger" style="color:white">Click</button></a>
+              </div>
+            </div>
+            <!-----acordion---------->
+
+             <!--acordion-->
+      <div data-spy="scroll" data-target="#navbar-example2" data-offset="0">
+   
+        <div class="accordion" id="accordionExample">
+          <div class="card">
+            <div class="card-header" id="headingFour">
+              <h2 class="mb-0">
+                <button class="btn btn-outline-success" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                  4to cuatrimestre: Estructura de datos
+                </button>
+              </h2>
+            </div>
+            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+              <div class="card-body">
+                <a href="4to.html"><button class="btn btn-outline-danger" style="color:white">Click</button></a>
+              </div>
+            </div>
+            <!-----acordion---------->
+
+             <!--acordion-->
+      <div data-spy="scroll" data-target="#navbar-example2" data-offset="0">
+       
+        <div class="accordion" id="accordionExample">
+          <div class="card">
+            <div class="card-header" id="headingFive">
+              <h2 class="mb-0">
+                <button class="btn btn-outline-success" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+                  7mo cuatrimestre: Programación web
+                </button>
+              </h2>
+            </div>
+            <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+              <div class="card-body">
+                <a href="7to.html"><button class="btn btn-outline-danger" style="color:white">Click</button></a>
+              </div>
+            </div>
+            <!-----acordion---------->
+  
+         <!--acordion-->
+      <div data-spy="scroll" data-target="#navbar-example2" data-offset="0">
+       
+        <div class="accordion" id="accordionExample">
+          <div class="card">
+            <div class="card-header" id="headinguno">
+              <h2 class="mb-0">
+                <h4 id="mecatronica">Mecatrónica</h4>
+                <button class="btn btn-outline-success" type="button" data-toggle="collapse" data-target="#collapseuno" aria-expanded="true" aria-controls="collapseuno">
+                  1er cuatrimestre: Herramientas informáticas I4.0
+                </button>
+              </h2>
+            </div>
+            <div id="collapseuno" class="collapse" aria-labelledby="headinguno" data-parent="#accordionExample">
+              <div class="card-body">
+                <a href="primero.html"><button class="btn btn-outline-danger" style="color:white">Click</button></a>
+              </div>
+            </div>
+            <!-----acordion---------->
+            
+             <!--acordion-->
+      <div data-spy="scroll" data-target="#navbar-example2" data-offset="0" >
+       
+        <div class="accordion" id="accordionExample">
+          <div class="card">
+            <div class="card-header" id="headingdos">
+              <h2 class="mb-0">
+                <button class="btn btn-outline-success" type="button" data-toggle="collapse" data-target="#collapsedos" aria-expanded="true" aria-controls="collapsedos">
+                  2do cuatrimestre: Funciones matemáticas
+                </button>
+              </h2>
+            </div>
+            <div id="collapsedos" class="collapse" aria-labelledby="headingdos" data-parent="#accordionExample">
+              <div class="card-body">
+                <a href="segund.html"><button class="btn btn-outline-danger" style="color:white">Click</button></a>
+              </div>
+            </div>
+            <!-----acordion---------->
+
+             <!--acordion------>
+      <div data-spy="scroll" data-target="#navbar-example2" data-offset="0">
+       
+        <div class="accordion" id="accordionExample">
+          <div class="card">
+            <div class="card-header" id="headingtres">
+              <h2 class="mb-0">
+                <button class="btn btn-outline-success" type="button" data-toggle="collapse" data-target="#collapsetres" aria-expanded="true" aria-controls="collapsetres">
+                3er cuatrimestre: Probabilidad y estadística
+                </button>
+              </h2>
+            </div>
+            <div id="collapsetres" class="collapse" aria-labelledby="headingtres" data-parent="#accordionExample">
+              <div class="card-body">
+                <a href="tercero.html"><button class="btn btn-outline-danger" style="color:white">Click</button></a>
+              </div>
+            </div>
+            <!-----acordion---------->
+
+            <h1 style="color: honeydew; background: grey;" class="text-md-center"></h1>
+
+      <div class="pp" data-spy="scroll" data-target="#navbar-example2" data-offset="0" >
+        <br>
+        <br>
+        <h4 id="acerca" style="color:coral">Acerca de</h4>
+        <p>
+  
+         MSC Aarón Iván Salazar Macías  <br>
+          <b style="color: lawngreen;">ESTUDIOS:</b>
+          <br> <br>
+          Maestría en Sistemas Computacionales - Instituto Tecnológico de La Laguna<br>
+          Ingeniería en Tecnologías de la Información - Universidad Politécnica de Gómez Palacio<br>
+          Otros: Carrera Técnica en Música y Carrera Técnica en Contabilidad<br> <br>
+          
+          <b style="color: lawngreen;">EXPERIENCIA:</b><br>
+          Universidad Politécnica de Gómez Palacio 2017<br>
+          Universidad Tecnológica de Torreón 2016<br>
+          Colegio SL 2015 (Encargado de Sistemas, Desarrollo de sistema para evaluación a docentes, Desarrollo de plataforma para control de planeaciones, Gestión de moodle, Gestión de página web)<br>
+          Renovaweb 2013 (Desarrollo de sistema de vinculación para instituciones de educación superior)<br><br>
+          
+          <b style="color: lawngreen;">RECONOCIMIENTOS:</b><br>
+          Reconocimiento al mejor promedio de la generación 2010 - 2013, Universidad Politécnica de Gómez Palacio, 2014<br>
+          Reconocimiento al mérito académico por el mejor promedio de la Universidad Politécnica de Gómez Palacio por el gobernador C.P. Jorge Herrera Caldera, 2014<br><br>
+          
+          
+          <b style="color: lawngreen;">OBJETIVO:</b><br>
+          Ser el mejor maestro de la institución y lograr que mis alumnos sean personas íntegras con conocimientos para su desarrollo profesional.<br></p>
+  
+        <h4 id="reglamento" style="color:coral">Reglamento</h4>
+        <br>      
+          Apreciables alumnos, pongo a su disposición el reglamento del salón de clases. Los alumnos itianos y mecatrónicos de la UTT y de la UPGOP se distinguen por cumplir con el reglamento de la clase: <br><br>
+          
+          
+          
+          <b style="color: lawngreen;">FORMACIÓN ÍNTEGRA Y DE VALORES</b><br>
+          Los alumnos son personas comprometidas con la sociedad y el medio ambiente, dando siempre una imagen ejemplar.<br> 
+          <b style="color:cadetblue;">Asistencia y puntualidad</b><br>
+          Los alumnos saben que toda persona comprometida, asiste puntualmente a todas sus clases, conferencias, registra su asistencia en Moodle, avisa en caso de inconvenientes (enfermedades o cualquier otra situación) y en caso de no asistir, cumple con las tareas, evidencias en tiempo y forma, por que sabe que hay consecuencias en caso de no hacerlo.<br>
+          <b style="color: cadetblue;">Evaluación (Saber & Saber Hacer)</b><br>
+          Los alumnos conocen la importancia de tener un cuaderno de trabajo ordenado, limpio y con las indicaciones pertinentes a lo igual con trabajos, evidencias y evaluaciones marcadas por cada unidad. Siguen las rúbricas presentadas por el docente y son puntuales a la hora de entrega.<br>
+          <br><b style="color: lawngreen;">EVALUACIÓN</b><br>
+          <br>
+         <b style="color:cadetblue"> ORDINARIA:</b> Saber(30%) + Saber Hacer(40%) + Ser(30%) = 100%<br>
+         <b style="color:cadetblue;"> REMEDIAL:</b> Máxima calificación para UTT - 80%<br>
+          <b style="color:cadetblue;">REMEDIAL:</b> Máxima calificación para UPGOP - 70%<br>
+          <b style="color:cadetblue;;">SABER:</b> Conocimiento del alumno adquirido mediante tareas, investigaciones, prácticas, etc.<br>
+          <b style="color:cadetblue;">SABER HACER:</b> Evaluación por Unidad<br>
+          <b style="color:cadetblue;">SER:</b> El alumno es una persona integra y de valores con compromiso social, responsable, ordenado y respetuoso.<br>
+         <br><b style="color: lawngreen;"">Respeto</b><br>
+          Los alumnos demuestran su educación respetando a los docentes y sus compañeros de clase, así como a todo el personal de la institución. Recuerda que el respetar promueve la paz.<br>
+          <b style="color: lawngreen;"">Compromiso Laboral</b><br>
+          Los alumnos que trabajan y estudian, saben que tienen doble comprimiso, avisan a su maestro en caso de cualquier inconveniente, así que deben comprometerse el doble para la entrega de tareas, trabajos y evidencias, ya que de no hacerlo, hay consecuencias.<br>
+          <b style="color: lawngreen;"">Herramientas de trabajo </b><br>
+          Los alumnos conocen la importancia de asistir todos los días de clase con las herramientas de trabajo (Laptop, Visual Studio, Netbeans, Management, Workbench, Virtualbox, Visio, Project, Office, XAMPP, Sublime, Adobe Illustrator, etc.)<br></p>
+          <br>
+            <br>
+      </div>
+
+
+<!---------------------->
+<h1 style="color: honeydew; background: grey;" class="text-md-center">TEMAS</h1>
+<!---contenedor con cards---->
+<div class="table table-sm">
+<table class="table">
+
+  <div class="row">
+    <div class="col-sm">
+      <div class="card" style="width: 15rem;">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR32Qk6MrAfT_9WH7LsxAZJEI5mb9X-r74xug&usqp=CAU" class="card-img-top" alt="..." height="300px">
+        <div class="card-body">
+          <h5 class="card-title" style="color: coral;">Internet of Things: </h5>
+          <p class="card-text" style="color: lightskyblue;">El Internet de las cosas (IoT) describe la red de objetos físicos, "cosas", que están integrados con sensores, software y otras tecnologías con el fin de conectar e intercambiar datos con otros dispositivos y sistemas a través de Internet.</p>
+          <a href="https://www.youtube.com/playlist?list=PLPz4YNz_pz1UAY7q7aqh_RLeHB-CfsT8r" class="btn btn-outline-success" style="color:ghostwhite;">---------ENLACE---------</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm">
+      <div class="card" style="width: 15rem;">
+        <img src="https://storage.googleapis.com/site.esss.co/221f1801-thumb.jpg" class="card-img-top" alt="te falta internet homs" height="300px">
+        <div class="card-body">
+          <h5 class="card-title" style="color: coral;">Industria 4.0</h5>
+          <p class="card-text" style="color: lightskyblue;">La Cuarta Revolución Industrial, también conocida como industria 4.0, está cambiando la forma en que los negocios operan y, por lo tanto, los entornos en los se ven obligados a competir.</p>
+          <a href="https://www.youtube.com/playlist?list=PLPz4YNz_pz1UAY7q7aqh_RLeHB-CfsT8r" class="btn btn-outline-success"style="color:ghostwhite;" >---------ENLACE---------</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm">
+      <div class="card" style="width: 15rem;">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREXzoCnINCe5kUcbDNEqqoV9ZzN0l98KyHEQ&usqp=CAU" class="card-img-top" alt="..." height="300px">
+        <div class="card-body">
+          <h5 class="card-title" style="color: coral;">Big data y Data Science:</h5>
+          <p class="card-text" style="color: lightskyblue;">Big data y data science emergieron para transformar y dotar de sentido al panorama digital y tecnológico actual. Ambos términos están estrechamente relacionados entre sí, pero, ¿qué son, para qué sirven y en qué se diferencian?</p>
+          <a href="https://www.youtube.com/playlist?list=PLPz4YNz_pz1UAY7q7aqh_RLeHB-CfsT8r" class="btn btn-outline-success"style="color:ghostwhite;" >---------ENLACE---------</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm">
+      <div class="card" style="width: 15rem;">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTL85ohYv0rRG3YmL5gA1xdoALwENV1psdigA&usqp=CAU" class="card-img-top" alt="..." height="300px">
+        <div class="card-body">
+          <h5 class="card-title" style="color: coral;">Cloud hosting:</h5>
+          <p class="card-text" style="color:lightskyblue;">es la disponibilidad bajo demanda de los recursos del sistema informático , especialmente el almacenamiento de datos ( almacenamiento en la nube ) y la potencia informática , sin una gestión activa directa por parte del usuario.</p>
+          <a id="btn_1" href="https://www.youtube.com/playlist?list=PLPz4YNz_pz1UAY7q7aqh_RLeHB-CfsT8r" class="btn btn-outline-success" style="color:ghostwhite;">---------ENLACE---------</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm">
+      <div class="card" style="width: 15rem;">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHdWgEYwMbHWQDY55WuBYXaHN9bT8yjtTU0w&usqp=CAU" class="card-img-top" alt="..." height="300px">
+        <div class="card-body">
+          <h5 class="card-title" style="color: coral;">Blockchain: </h5>
+          <p class="card-text" style="color: lightskyblue;">es un servicio de exploración de bloques de Bitcoin , así como una billetera de criptomonedas y un intercambio de criptomonedas que admite Bitcoin , Bitcoin Cash y Ethereum.</p>
+          <a href="https://www.youtube.com/playlist?list=PLPz4YNz_pz1UAY7q7aqh_RLeHB-CfsT8r" class="btn btn-outline-success" style="color:ghostwhite;">---------ENLACE---------</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</table>
+</div>
+<!---contenedor con cards--->
+<h1 style="color: honeydew; background: grey;" >DE QUE TRATAN LAS CARRERAS...?</h1>
+<br>
+<!--media object-->
+<div class="table table-sm">
+  <table class="table">
+    <div class="row">
+      <div class="col-xl">
+        <div class="media">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_Iwl32V1X8f8g4R7MSbhtQ1TC4HmF7JAsUQ&usqp=CAU" class="mr-3" height="265px" width="350px">
+          <div class="media-body">
+            <h2 class="mt-0" style="color: coral;">INGENIERÍA EN TECNOLOGÍAS DE LA INFROMACIÓN</h2>
+            <p style="color:dodgerblue" class="h4">DESCRIPCIÓN CARRERA:</p>
+            <p style="color: white" class="h4">El Ingeniero en Tecnologías de la Información aplica sus sólidos conocimientos al diseño, desarrollo e instrumentación de soluciones informáticas que requieren las organizaciones, atendiendo las necesidades humanas derivadas de la interacción con la computadora. Es competente para mantener equipos de cómputo operando eficientemente y ofrece al usuario soluciones integrales a los problemas asociados con el área computacional.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col-xl">
+        <div class="media">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1429tHgmzRgrU_EIOZneBUf_i3eAH6goM9A&usqp=CAU" class="mr-3" height="265px" width="350px">
+          <div class="media-body">
+            <h2 class="mt-0" style="color: coral;">MECATRÓNICA</h2>
+           <p style="color: white;" class="h4">La mecatrónica es un área multidisciplinar, ya que incorpora elementos de la electrónica, la mecánica, robótica, sistemas de computación y manufactura. El profesional de este sector ha estudiado la rama de ingeniería mecatrónica.
+<br><br>
+            El término mecatrónica se empezó a utilizar en Japón a principios de 1980 y hoy en día se emplea en todo lo relacionado con el mejoramiento y la simplificación de a actividad industrial.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </table>
+</div>
+
+<h1 style="color: honeydew; background: grey;" class="text-md-center">TUTORIALES</h1>
+
+<!--media object-->
+<div class="jumbotron">
+  <h1 class="display-4" style="color: coral;">LINKS</h1>
+  <p class="lead" style="color: white;">Los siguiente botones te dirigen a tutoriales sobre 3 lenguajes de programación, haga click si quiere saber más.</p>
+  <hr class="my-4">
+  <a class="btn btn-outline-danger" href="https://www.youtube.com/playlist?list=PLyvsggKtwbLX9LrDnl1-K6QtYo7m0yXWB" role="button">Java</a>
+  <a class="btn btn-outline-danger" href="https://www.youtube.com/playlist?list=PL8gxzfBmzgexdFa0XZZSZZn2Ogx3j-Qd5" role="button">C#</a>
+  <a class="btn btn-outline-danger" href="https://www.youtube.com/playlist?list=PLw8RQJQ8K1ySN6bVHYEpDoh-CKVkL_uOF" role="button">C</a>
+</div>
+
+<h1 style="color: honeydew; background: grey;">Programación web</h1>
+<h1 style="color: honeydew; background: grey;">PRW-ES 7A & 7B</h1>
+    <!--acordion-->
+      <div class="accordion" id="accordionExample">
+        <div class="card">
+          <div class="card-header" id="headMa">
+            <h1>Programa de estudio</h1>
+            <h2 class="mb-0">
+              <button class="btn btn-outline-success" type="button" data-toggle="collapse" data-target="#collapseMa" aria-expanded="true" aria-controls="collapseMa">
+               Manual de la asignatura
+              </button>
+            </h2>
+          </div>
+          <div id="collapseMa" class="collapse" aria-labelledby="headMa" data-parent="#accordionExample">
+            <div class="card-body">
+              <div class="content padding10" style="display: block;">
+                <h3 style="color: coral;">Clave</h3>
+<p class="align-justify" style="color: white;">PRW-ES 7A y 7B</p>
+
+<h3 style="color: coral;">Propósito de la materia:</h3>
+<p class="align-justify" style="color: white;">El alumno implementará sistemas empleando tecnologías web para extender la disponibilidad y alcances de los servicios de la organización.</p>					</div>
+            </div>
+          </div>
+          <!-----acordion---------->
+
+           <!--acordion-->
+      
+        <div class="accordion" id="accordionExample">
+          <div class="card">
+            <div class="card-header" id="headingEv">
+              <h2 class="mb-0">
+                <button class="btn btn-outline-success" type="button" data-toggle="collapse" data-target="#collapseEv" aria-expanded="true" aria-controls="collapseEv">
+                  Evaluación
+                </button>
+              </h2>
+            </div>
+            <div id="collapseEv" class="collapse" aria-labelledby="headingEv" data-parent="#accordionExample">
+              <div class="card-body">
+                <div class="content padding10" style="display: block;">
+                  <div class="example" data-text="Ordinario">
+  <button class="shortcut-button bg-cyan bg-active-darkBlue fg-white">
+                  <span class="icon mif-folder-open"></span>
+                  <span class="title">Saber</span>
+                  <span class="badge">30%</span>
+  </button>
+  <button class="shortcut-button bg-white bg-active-darkBlue fg-dark">
+                  <span class="icon mif-plus"></span>
+                  <span class="title">Más</span>
+                  <span class="badge">+</span>
+  </button>
+  <button class="shortcut-button bg-cyan bg-active-darkBlue fg-white">
+                  <span class="icon mif-file-text"></span>
+                  <span class="title">Saber Hacer</span>
+                  <span class="badge">40%</span>
+  </button>
+  <button class="shortcut-button bg-white bg-active-darkBlue fg-dark">
+                  <span class="icon mif-plus"></span>
+                  <span class="title">Más</span>
+                  <span class="badge">+</span>
+  </button>
+  <button class="shortcut-button bg-cyan bg-active-darkBlue fg-white">
+                  <span class="icon mif-file-text"></span>
+                  <span class="title">Ser</span>
+                  <span class="badge">30%</span>
+  </button>
+  <button class="shortcut-button bg-white bg-active-darkBlue fg-dark">
+                  <span class="icon mif-arrow-right"></span>
+                  <span class="title">Igual</span>
+                  <span class="badge">=</span>
+  </button>
+  <button class="shortcut-button bg-cyan bg-active-darkBlue fg-white">
+                  <span class="icon mif-rocket"></span>
+                  <span class="title">Cien Porciento</span>
+                  <span class="badge">100%</span>
+  </button>
+</div>
+
+
+<div class="example" data-text="Remedial">
+  <button class="shortcut-button bg-cyan bg-active-darkBlue fg-white">
+                  <span class="icon mif-folder-open"></span>
+                  <span class="title">Saber</span>
+                  <span class="badge">30%</span>
+  </button>
+  <button class="shortcut-button bg-white bg-active-darkBlue fg-dark">
+                  <span class="icon mif-plus"></span>
+                  <span class="title">Más</span>
+                  <span class="badge">+</span>
+  </button>
+  <button class="shortcut-button bg-cyan bg-active-darkBlue fg-white">
+                  <span class="icon mif-file-text"></span>
+                  <span class="title">Saber Hacer</span>
+                  <span class="badge">40%</span>
+  </button>
+  <button class="shortcut-button bg-white bg-active-darkBlue fg-dark">
+                  <span class="icon mif-plus"></span>
+                  <span class="title">Más</span>
+                  <span class="badge">+</span>
+  </button>
+  <button class="shortcut-button bg-cyan bg-active-darkBlue fg-white">
+                  <span class="icon mif-file-text"></span>
+                  <span class="title">Ser</span>
+                  <span class="badge">0%</span>
+  </button>
+  <button class="shortcut-button bg-white bg-active-darkBlue fg-dark">
+                  <span class="icon mif-arrow-right"></span>
+                  <span class="title">Igual</span>
+                  <span class="badge">=</span>
+  </button>
+  <button class="shortcut-button bg-cyan bg-active-darkBlue fg-white">
+                  <span class="icon mif-rocket"></span>
+                  <span class="title">Ochenta Porciento</span>
+                  <span class="badge">70%</span>
+  </button>
+</div>
+<br>
+
+
+<h3 style="color: coral;">Evaluaciones por Unidad</h3>
+<div class="treeview" data-role="treeview">
+  <ul>
+
+      <li class="node active" style="color: white;">
+          <span class="leaf">Unidades</span>
+          <span class="node-toggle"></span>
+          <ul>
+              <li class="">
+                  <span class="leaf">Unidad I - Introducción a los sistemas web</span>
+              </li>
+              <li class="">
+                  <span class="leaf">Unidad II - Programación del lado del cliente</span>
+              </li>
+              <li class="">
+                  <span class="leaf">Unidad III - Programación del lado del servidor</span>
+              </li>
+              <li class="">
+                  <span class="leaf">Unidad IV - Autenticación de usuarios</span>
+              </li>
+          </ul>
+      </li>
+  </ul>
+</div>
+                </div>
+              </div>
+            </div>
+            <!-----acordion---------->
+
+               <!--acordion------>
+       
+        <div class="accordion" id="accordionExample">
+          <div class="card">
+            <div class="card-header" id="headingBi">
+              <h2 class="mb-0">
+                <button class="btn btn-outline-success" type="button" data-toggle="collapse" data-target="#collapseBi" aria-expanded="true" aria-controls="collapseBi">
+                Bibliografía
+                </button>
+              </h2>
+            </div>
+            <div id="collapseBi" class="collapse" aria-labelledby="headingBi" data-parent="#accordionExample">
+              <div class="card-body">
+                <div class="content padding10" style="display: block;">
+                  <p class="align-justify" style="color: white;">
+Steve Prettyman	2016	Learn PHP 7, Object-Oriented Modular Programming using HTML5, CSS3, JavaScript, 
+</p>
+<p class="align-justify" style="color: white;">
+XML, JSON and MySQL	Stone Mountain, Georgia USA	Apress	978148421729-0
+</p>
+<p class="align-justify" style="color: white;">
+Williams Sanders	2013	Learning PHP Design Patterns	United States	O' Reilly	9781449344917
+</p>
+<p class="align-justify" style="color: white;">
+Antonio Melé	2015	Django by example	 	Packt Pub	9781784391911
+</p>
+<p class="align-justify" style="color: white;">
+Pedro Clemente Bonilla	2014	Diseño Web Adaptativo	España	Anaya Multimedia	9788441533899
+</p>
+                </div>
+              </div>
+            </div>
+            <!-----acordion---------->
+
+            <!--acordion-->
+  
+        <div class="accordion" id="accordionExample">
+          <div class="card">
+            <div class="card-header" id="headingTe1">
+              <h1>Unidad I - Introducción a los sistemas web</h1>
+              <h2 class="mb-0">
+                <button class="btn btn-outline-success" type="button" data-toggle="collapse" data-target="#collapseTe1" aria-expanded="true" aria-controls="collapseTe1">
+                  Tema 1 - Herramientas a utilizar
+                </button>
+              </h2>
+            </div>
+            <div id="collapseTe1" class="collapse" aria-labelledby="headingTe1" data-parent="#accordionExample">
+              <div class="card-body">
+                <div class="content padding10" style="display: block;">
+                  <h3 style="color: coral;">Tema 1 - Herramientas a utilizar</h3>
+<div class="grid">
+<div class="row cells3">
+  <div class="cell colspan2" style="color: white;">
+    <b>Visual Studio Code</b>
+    <p class="align-justify">
+      Da clic en la imagen para descargar Visual Studio Code: 
+    </p>
+    <p class="align-justify">
+      <a href="https://code.visualstudio.com/" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Visual_Studio_Code_1.18_icon.svg/1200px-Visual_Studio_Code_1.18_icon.svg.png" alt="VSCode" width="150">
+      </a>
+    </p>
+
+    <b>Extensiones de Visual Studio Code</b>
+    <p class="align-justify">
+      Dentro de Visual Studio Code, instala las siguientes extensiones:
+    </p>
+    <ol>
+      <li><b>PRETTIER</b> - Le da formato al código</li>
+      <li><b>LIVE SHARE</b> - permite trabajar en equipo al mismo tiempo</li>
+      <li><b>GITLENS</b> - Para trabajar con GIT, muestra historial (versiones) de cada linea de código</li>
+      <li><b>EDITORCONFIG</b> - Permite configurar el proyecto para que todo el equipo tenga las mismas configuraciones</li>
+      <li><b>POLACODE</b> - Captura código</li>
+      <li><b>ESLINT</b> - Busca errores de sintaxis JS</li>
+      <li><b>INDENT RAINBOW</b> - Para indentar etiquetas</li>
+      <li><b>LIVE SERVER</b> - Crea un pequeño servidor local para que veas lo que hace cada cambio de tu código</li>
+      <li><b>SVG</b> - Genera graficos con código</li>
+    </ol>
+
+    <b>XAMPP</b>
+    <p class="align-justify">
+      Da clic en la imagen para descargar XAMPP:
+    </p>
+    <p class="align-justify">
+      <a href="https://www.apachefriends.org/es/index.html" target="_blank">
+        <img src="https://lh3.googleusercontent.com/proxy/ITx6_1Ixul8SVTY779KesFwjslxkAQOK6NX_GbKJvwER8c5rmD7X9xIceMnNmNYhnPPdVWaTFSsJTtUeJXoe9nZbrE98FrG7IhDr6Bx6e0VqlgvKHhQ" alt="xampp" width="150">
+      </a>
+    </p>
+
+    <b>Workbench MySQL 8.0.21</b>
+    <p class="align-justify">
+      Da clic en la imagen para descargar Workbench MySQL:
+    </p>
+    <p class="align-justify">
+      <a href="https://dev.mysql.com/downloads/workbench/" target="_blank">
+        <img src="https://i.ytimg.com/vi/-GnKwwc4KSA/maxresdefault.jpg" alt="Workbench MySQL" width="150">
+      </a>
+    </p>
+  </div>
+</div>
+</div> 
+                </div>
+              </div>
+            </div>
+            <!-----acordion---------->
+
+            <!--acordion-->
+  
+        <div class="accordion" id="accordionExample">
+          <div class="card">
+            <div class="card-header" id="headingTe2">
+              <h2 class="mb-0">
+                <button class="btn btn-outline-success" type="button" data-toggle="collapse" data-target="#collapseTe2" aria-expanded="true" aria-controls="collapseTe2">
+                  Tema 2 - Ingeniería web
+                </button>
+              </h2>
+            </div>
+            <div id="collapseTe2" class="collapse" aria-labelledby="headingTe2" data-parent="#accordionExample">
+              <div class="card-body">
+                <div class="content padding10" style="display: block;">
+										
+                  <h3 style="color: coral;">Tema 2 - Ingeniería web</h3>
+                  <div class="grid">
+                    <div class="row cells3">
+                      <div class="cell colspan2">
+                        <b style="color: white;">Da clic sobre el enlace para descargar el documento PDF referente al tema 2 - Ingeniería web:</b>
+                        <p class="align-justify">
+                          <a href="/resources/upgop/programacionweb/ingenieriaweb.pdf" target="_blank">
+                            <img src="/resources/parapdf.png" alt="" width="300">
+                          </a>
+                        </p>
+                        
+                      </div>
+                    </div>
+                  </div> 
+                                    </div>
+              </div>
+            </div>
+            <!-----acordion---------->
+
+            <!--acordion-->
+      
+        <div class="accordion" id="accordionExample">
+          <div class="card">
+            <div class="card-header" id="headingTe3">
+              <h2 class="mb-0">
+                <button class="btn btn-outline-success" type="button" data-toggle="collapse" data-target="#collapseTe3" aria-expanded="true" aria-controls="collapseTe3">
+                  Tema 3 - Configuración de servidores web
+                </button>
+              </h2>
+            </div>
+            <div id="collapseTe3" class="collapse" aria-labelledby="headingTe3" data-parent="#accordionExample">
+              <div class="card-body">
+                <div class="content padding10" style="display: block;">
+										
+                  <h3 style="color: coral;">Tema 3 - Configuración de servidores web</h3>
+                  <div class="grid">
+                    <div class="row cells3">
+                      <div class="cell colspan2" style="color: white;">
+                        <b>Tipos de configuraciones de servidores web</b>
+                        <p class="align-justify">
+                          Existen dos tipos de configuraciones de servidores web:
+                        </p>
+                        <ol>
+                          <li>Configuración de servidor de desarrollo</li>
+                          <li>Configuración de servidor de producción</li>
+                        </ol>
+                        
+                        <b>Da clic en la imagen para acceder al tutorial de cómo configurar un servidor de desarrollo</b>
+                        <p class="align-justify">
+                          <a href="/resources/upgop/programacionweb/configuraciondeservidorwebdedesarrollo.pdf" target="_blank">
+                            <img src="/resources/parapdf.png" alt="" width="300">
+                          </a>
+                        </p>
+                  
+                        <b>Da clic en la imagen para acceder al tutorial de cómo configurar un servidor de producción</b>
+                        <p class="align-justify">
+                          <a href="/resources/upgop/programacionweb/configuraciondeservidorwebdeproduccion.pdf" target="_blank">
+                            <img src="/resources/parapdf.png" alt="" width="300">
+                          </a>
+                        </p>
+                      </div>
+                    </div>
+                  </div> 
+                                    </div>
+              </div>
+            </div>
+            <!-----acordion---------->
+
+             <!-----acordion---------->
+
+             <div class="accordion" id="accordionExample">
+              <div class="card">
+                <div class="card-header" id="headingEvalua">
+                  <h2 class="mb-0">
+                    <button class="btn btn-outline-success" type="button" data-toggle="collapse" data-target="#collapseEvalua" aria-expanded="true" aria-controls="collapseEvalua">
+                      Evaluación
+                    </button>
+                  </h2>
+                </div>
+                <div id="collapseEvalua" class="collapse" aria-labelledby="headingEvalua" data-parent="#accordionExample">
+                  <div class="card-body">
+                    <div class="content padding10" style="display: block;">
+										
+                      <h3 style="color: coral;">Evaluación</h3>
+                      <div class="grid">
+                        <div class="row cells3">
+                          <div class="cell colspan2" style="color: white;">
+                            <b>INDICACIONES:</b>
+                            <p class="align-justify">
+                              Elabora un reporte digital a partir de un caso práctico de instalación y configuración de servidores web. Este trabajo debe subirse en PDF y se debe incluir numeración de página, letra arial tamaño 16 y títulos y preguntas en negritas con letra más grande (18), texto justificado y con ilustraciones y seguir el siguiente formato:
+                            </p>
+                            <ol>
+                              <li>Portada: Nombre de la escuela, logotipo de la escuela, carrera, asignatura, profesor, nombre del alumno, matrícula, grupo, lugar y fecha.</li>
+                              <li>Introducción (mínimo una cuartilla)</li>
+                              <li>Desarrollo:
+                                <ul>
+                                  <li>Descripción con capturas del proceso de instalación y configuración de un servidor de desarrollo</li>
+                                  <li>Descripción con capturas del proceso de Instalación y configuración de un servidor de producción</li>
+                                  <li>Lista de cotejo de las aplicaciones utilizadas en el proceso de instalación de servidores</li>
+                      
+                                </ul>
+                              </li>
+                              <li>Conclusiones personales (mínimo una cuartilla)</li>
+                              <li>Referencias (mínimo 5 referencias)</li>
+                            </ol>	
+                          </div>
+                        </div>
+                      </div> 
+                                        </div>
+                  </div>
+                </div>
+                <!-----acordion---------->
+
+            <!--acordion-->     
+       
+        <div class="accordion" id="accordionExample">
+          <div class="card">
+            <div class="card-header" id="headingTem1">
+              <h1>Unidad II - Programación del lado del cliente</h1>
+              <h2 class="mb-0">
+                <button class="btn btn-outline-success" type="button" data-toggle="collapse" data-target="#collapseTem1" aria-expanded="true" aria-controls="collapseTem1">
+                  Tema 1 - HTML
+                </button>
+              </h2>
+            </div>
+            <div id="collapseTem1" class="collapse" aria-labelledby="headingTem1" data-parent="#accordionExample">
+              <div class="card-body">
+                <div class="content padding10" style="display: block;">
+										
+                  <h3 style="color: coral;">Tema 1 - HTML</h3>
+                  <div class="grid">
+                    <div class="row cells3">
+                      <div class="cell colspan2" style="color: white;">
+                        <b>¿Qué es HTML?</b>
+                        <ul>
+                          <li>HTML son las siglas de Hyper Text Markup Language</li>
+                          <li>HTML es el lenguaje de marcado estándar para crear páginas web</li>
+                          <li>HTML describe la estructura de una página web</li>
+                          <li>HTML consta de una serie de elementos</li>
+                          <li>Los elementos HTML le dicen al navegador cómo mostrar el contenido.</li>
+                          <li>Los elementos HTML etiquetan partes de contenido como "esto es un encabezado", "esto es un párrafo", "esto es un enlace", etc.</li>
+                        </ul>	
+                        <p class="align-justify">
+                          <img src="https://disenowebakus.net/imagenes/articulos/estructura-basica-de-una-pagina-web-en-html.jpg" alt="" width="500">
+                        </p>
+                        <b>Manual paso a paso de etiquetas HTML</b>
+                        <p class="align-justify">
+                          <a href="/resources/upgop/programacionweb/etiquetashtml.pdf" target="_blank">
+                            <img src="http://tolinware.com/resources/parapdf.png" alt="" width="300">
+                          </a>
+                        </p>
+                  
+                        <b>Estructura semántica de HTML5</b>
+                        <p class="align-justify">
+                          <img src="https://4.bp.blogspot.com/-eN_e6mXhCwM/WnNBa4jtS1I/AAAAAAAAA4A/JXHUnoQvV4UdUdrE3PMaBCFct0vKCINUwCLcBGAs/s1600/HTML5-elements.jpg" alt="html5" width="500">
+                        </p>
+                  
+                        <b>Manual paso a paso de etiquetas para formularios HTML</b>
+                        <p class="align-justify">
+                          <a href="/resources/upgop/programacionweb/formularioshtml.pdf" target="_blank">
+                            <img src="http://tolinware.com/resources/parapdf.png" alt="" width="300">
+                          </a>
+                        </p>
+                      </div>
+                    </div>
+                  </div> 
+               </div>
+              </div>
+            </div>
+            <!-----acordion---------->
+            
+             <!--acordion-->
+       
+        <div class="accordion" id="accordionExample">
+          <div class="card">
+            <div class="card-header" id="headingTem2">
+              <h2 class="mb-0">
+                <button class="btn btn-outline-success" type="button" data-toggle="collapse" data-target="#collapseTem2" aria-expanded="true" aria-controls="collapseTem2">
+                  Tema 2 - CSS
+                </button>
+              </h2>
+            </div>
+            <div id="collapseTem2" class="collapse" aria-labelledby="headingTem2" data-parent="#accordionExample">
+              <div class="card-body">
+                <div class="content padding10" style="display: block;">
+										
+                  <h3 style="color: coral;">Tema 2 - CSS</h3>
+                  <div class="grid">
+                    <div class="row cells3" style="color: white;">
+                      <div class="cell colspan2">
+                              <b>Propiedad position CSS</b>
+                              <p class="align-justify">
+                          <a href="/resources/upgop/programacionweb/css-position.pdf" target="_blank">
+                            <img src="http://tolinware.com/resources/parapdf.png" alt="" width="300">
+                          </a>
+                        </p>
+                  
+                              <b>CSS - Ejemplos prácticos</b>
+                              <p class="align-justify">
+                          <a href="/resources/upgop/programacionweb/css.pdf" target="_blank">
+                            <img src="http://tolinware.com/resources/parapdf.png" alt="" width="300">
+                          </a>
+                        </p>
+                      </div>
+                    </div>
+                  </div> 
+               </div>
+              </div>
+            </div>
+            <!-----acordion---------->
+
+             <!--acordion-->
+  
+        <div class="accordion" id="accordionExample">
+          <div class="card">
+            <div class="card-header" id="headingTem3">
+              <h2 class="mb-0">
+                <button class="btn btn-outline-success" type="button" data-toggle="collapse" data-target="#collapseTem3" aria-expanded="true" aria-controls="collapseTem3">
+                  Tema 3 - JavaScript
+                </button>
+              </h2>
+            </div>
+            <div id="collapseTem3" class="collapse" aria-labelledby="headingTem3" data-parent="#accordionExample">
+              <div class="card-body">
+                <div class="content padding10" style="display: block;">
+										
+                  <h3 style="color:coral">Tema 3 - JavaScript</h3>
+                  <div class="grid">
+                    <div class="row cells3" style="color:white">
+                      <div class="cell colspan2">
+                              <b>Da clic sobre la imagen para descargar el documento pdf sobre JavaScript</b>
+                              <p class="align-justify">
+                          <a href="https://www.um.es/docencia/barzana/DAWEB/Lenguaje-de-programacion-JavaScript-1.pdf" target="_blank">
+                            <img src="http://tolinware.com/resources/parapdf.png" alt="" width="300">
+                          </a>
+                        </p> 
+                      </div>
+                    </div>
+                  </div> 
+                </div>
+              </div>
+            </div>
+            <!-----acordion---------->
+
+             <!--acordion-->
+  
+        <div class="accordion" id="accordionExample">
+          <div class="card">
+            <div class="card-header" id="headingTem4">
+              <h2 class="mb-0">
+                <button class="btn btn-outline-success" type="button" data-toggle="collapse" data-target="#collapseTem4" aria-expanded="true" aria-controls="collapseTem4">
+                  Tema 4 - Bootstrap
+                </button>
+              </h2>
+            </div>
+            <div id="collapseTem4" class="collapse" aria-labelledby="headingTem4" data-parent="#accordionExample">
+              <div class="card-body">
+                <div class="content padding10" style="display: block;">
+                  <h1 style="color:coral">Tema 4 - Bootstrap</h1>
+
+<div class="grid">
+<div class="row cells2" style="color: white;">
+  
+  <div class="cell"> 
+    <b>Da clic en la siguiente ilustración para acceder saber como utilizar los componentes con diseño de bootstrap:</b>
+    <p class="align-justify">
+      <a href="https://getbootstrap.com/" target="_blank">
+        <img src="http://tolinware.com/resources/parapdf.png" alt="" width="300">
+      </a>
+    </p>
+  </div>
+</div>
+</div>									</div>
+              </div>
+            </div>           
+
+              <!--acordion------>
+      <div data-spy="scroll" data-target="#navbar-example2" data-offset="0">
+       
+        <div class="accordion" id="accordionExample">
+          <div class="card">
+            <div class="card-header" id="headingtres">
+              <h2 class="mb-0">
+                <button class="btn btn-outline-success" type="button" data-toggle="collapse" data-target="#collapsetres" aria-expanded="true" aria-controls="collapsetres">
+               Evaluación
+                </button>
+              </h2>
+            </div>
+            <div id="collapsetres" class="collapse" aria-labelledby="headingtres" data-parent="#accordionExample">
+              <div class="card-body">
+                <div class="content padding10" style="display: block;">
+                  <h1 style="color: coral;">Evaluación</h1>
+
+<div class="grid">
+<div class="row cells2" style="color: white;">
+  
+  <div class="cell"> 
+    <b>Evaluación</b>
+    <p class="align-justify">
+      <a href="/resources/upgop/programacionweb/requisitostolinware.pdf" target="_blank">
+        <img src="http://tolinware.com/resources/parapdf.png" alt="" width="300">
+      </a>
+    </p>
+  </div>
+</div>
+</div> 									</div>
+              </div>
+            </div>
+            <!-----acordion---------->
+
+             <!--acordion-->
+  
+        <div class="accordion" id="accordionExample">
+          <div class="card">
+            <div class="card-header" id="headingTema1">
+              <h1>Unidad III - Programación del lado del servidor</h1>
+              <h2 class="mb-0">
+                <button class="btn btn-outline-success" type="button" data-toggle="collapse" data-target="#collapseTema1" aria-expanded="true" aria-controls="collapseTema1">
+                  Tema 1 - Php
+                </button>
+              </h2>
+            </div>
+            <div id="collapseTema1" class="collapse" aria-labelledby="headingTema1" data-parent="#accordionExample">
+              <div class="card-body">
+                <div class="content padding10" style="display: block;">
+                  <h1 style="color: coral;">Tema 1 - Php</h1>
+
+<div class="grid">
+<div class="row cells2" style="color: white;">
+  
+  <div class="cell"> 
+    <b>Da clic en la siguiente ilustración para obtener más información sobre php:</b>
+    <p class="align-justify">
+      <a href="http://tutoriales.altervista.org/trabajos/Manual_php_completo.pdf" target="_blank">
+        <img src="http://tolinware.com/resources/parapdf.png" alt="" width="300">
+      </a>
+    </p>
+  </div>
+</div>
+</div>									</div>
+              </div>
+            </div>
+            <!-----acordion---------->
+
+             <!--acordion-->
+  
+        <div class="accordion" id="accordionExample">
+          <div class="card">
+            <div class="card-header" id="headingTema2">
+              <h2 class="mb-0">
+                <button class="btn btn-outline-success" type="button" data-toggle="collapse" data-target="#collapseTema2" aria-expanded="true" aria-controls="collapseTema2">
+                  Tema 2 - MVC CRUD with php/mysql
+                </button>
+              </h2>
+            </div>
+            <div id="collapseTema2" class="collapse" aria-labelledby="headingTema2" data-parent="#accordionExample">
+              <div class="card-body">
+                <div class="content padding10" style="display: block;">
+                  <h1 style="color: coral;">Tema 2 - MVC CRUD with php/mysql</h1>
+
+<div class="grid">
+<div class="row cells2" style="color: white;">
+  
+  <div class="cell"> 
+    <b>Objetivos</b>
+          <ol>
+              <li>Utilizar php y mysql para crear una conexión entre ellos</li>
+              <li>Aplicar principios de programación orientada a objetos en un sitio web</li>
+              <li>Agregar, editar, eliminar y consultar registros desde php a la base de datos</li>
+              <li>Comprender el funcionamiento de MVC (Model - View - Controller)</li>
+          </ol>
+          <b>MVC (Model - View - Controller)</b>
+          <p class="align-justify">
+              <img src="https://codigofacilito.com/photo_generales_store/29.jpg" alt="" width="500">
+          </p>
+
+          <b>Paso1. Crea la siguiente estructura en una carpeta llamada crud dentro del htdocs de xampp:</b>
+          <pre class="prettyprinted linelous prettyprint" style="color: white;">    crud/
+      controller/
+          sportsController.php
+      libs/
+      model/
+          sports.php
+          sportsModel.php
+      view/
+          insert.php
+          list.php 
+          update.php
+      config.php
+      index.php 
+          </pre>
+
+          <b>Paso2. Dentro de la carpeta libs/ agrega los siguientes archivos:</b>
+          <p class="align-justify">
+              <a href="/resources/upgop/programacionweb/libs.rar" target="_blank">
+                  <img src="http://tolinware.com/resources/parapdf.png" alt="" width="300">
+              </a>
+          </p>
+
+          <b>Paso3. Crea una base de datos llamada prueba con una tabla llamada sports con los siguientes atributos:</b>
+          <pre class="prettyprinted linelous prettyprint" style="color: white;">    sports
+  - &gt; id int
+  - &gt; category varchar
+  - &gt; name varchar
+          </pre>
+
+          <b>Paso4. Dentro del archivo config.php agrega lo siguiente:</b>
+          <p class="align-justify">
+              Se declara una clase llamada config en donde dentro de un constructor se asignaran a los valores iniciales de la configuración, las cuales son el host, user, password y nombre de la base de datos.
+          </p>
+          <pre class="prettyprinted linelous prettyprint" style="color: white;">    &lt; ?php  
+  class config    
+  {     
+      function __construct() {  
+          $this- &gt; host = "localhost";  
+          $this- &gt; user  = "root";  
+          $this- &gt; pass = "";  
+          $this- &gt; db = "crud";   
+      }  
+  }  
+  ? &gt; 
+          </pre>
+
+          <b>Paso5. Dentro del archivo index.php va lo siguiente:</b>
+          <p class="align-justify">
+              Dentro del archivo index.php, quien es el archivo principal del proyecto por ser el que se va a ejecutar primero, se debe declarar el método session_unset() el cual si esque llega a haber variables de sesión las libera. La función require_once incluye el archivo sportsController.php solo una vez. Después se crea la instancia del sportsController y se manda llamar el método mvcHandler().
+          </p>
+          <pre class="prettyprinted linelous prettyprint" style="color: white;">    &lt; ?php  
+      session_unset();  
+      require_once  'controller/sportsController.php';          
+      $controller = new sportsController();    
+      $controller- &gt; mvcHandler();  
+  ? &gt;  
+          </pre>
+
+          <b>Paso6. Modifica el modelo sports:</b>
+          <p class="align-justify">
+              Dentro del modelo sports, localizado dentro de la carpeta model/ declara la siguiente clase sports, debe llevar el mismo nombre de tabla sports en la base de datos y los mismos campos declarados. Aquí se utilizan string messages que son los utlizados en las vistas.
+          </p>
+          <pre class="prettyprinted linelous prettyprint" style="color: white;">    &lt; ?php  
+  class sports  
+  {  
+      // table fields  
+      public $id;  
+      public $category;  
+      public $name;  
+      // message string  
+      public $id_msg;  
+      public $category_msg;  
+      public $name_msg;  
+      // constructor set default value  
+      function __construct()  
+      {  
+          $id=0;$category=$name="";  
+          $id_msg=$category_msg=$name_msg="";  
+      }  
+  }  
+  ? &gt; 
+          </pre>
+
+
+          <b>Paso7. Define dentro del sportsModel:</b>
+          <p class="align-justify">
+              Dentro de sportsModel se crea el enlace de cada una de las propiedades y métodos con respecto a la base de datos:
+          </p>
+          <pre class="prettyprinted linelous prettyprint" style="color: white;">    &lt; ?php  
+    
+    class sportsModel  
+    {  
+        // set database config for mysql  
+        function __construct($consetup)  
+        {  
+            $this- &gt; host = $consetup- &gt; host;  
+            $this- &gt; user = $consetup- &gt; user;  
+            $this- &gt; pass =  $consetup- &gt; pass;  
+            $this- &gt; db = $consetup- &gt; db;                                  
+        }  
+        // open mysql data base  
+        public function open_db()  
+        {  
+            $this- &gt; condb=new mysqli($this- &gt; host,$this- &gt; user,$this- &gt; pass,$this- &gt; db);  
+            if ($this- &gt; condb- &gt; connect_error)   
+            {  
+                die("Erron in connection: " . $this- &gt; condb- &gt; connect_error);  
+            }  
+        }  
+        // close database  
+        public function close_db()  
+        {  
+            $this- &gt; condb- &gt; close();  
+        }  
+        // insert record  
+        public function insertRecord($obj){ }  
+            //update record  
+        public function updateRecord($obj){ }  
+             // delete record  
+        public function deleteRecord($id){ }     
+             // select record       
+        public function selectRecord($id){ }  
+    }  
+      
+    ? &gt; 
+          </pre>
+
+
+          <b>Paso8. Define los métodos dentro del controlador sportsController:</b>
+          <p class="align-justify">
+              
+          </p>
+          <pre class="prettyprinted linelous prettyprint" style="color: white;">&lt; ?php
+  require 'model/sportsModel.php';
+  require 'model/sports.php';
+  require_once 'config.php';
+
+  session_status() === PHP_SESSION_ACTIVE ? TRUE : session_start();
+  
+class sportsController 
+{
+
+   function __construct() 
+  {          
+    $this- &gt; objconfig = new config();
+    $this- &gt; objsm =  new sportsModel($this- &gt; objconfig);
+  }
+
+
+      // mvc handler request
+  public function mvcHandler() 
+  {
+    $act = isset($_GET['act']) ? $_GET['act'] : NULL;
+    switch ($act) 
+    {
+              case 'add' :                    
+        $this- &gt; insert();
+        break;						
+      case 'update':
+        $this- &gt; update();
+        break;				
+      case 'delete' :					
+        $this - &gt;  delete();
+        break;								
+      default:
+                  $this- &gt; list();
+    }
+  }		
+
+
+      // page redirection
+  public function pageRedirect($url)
+  {
+    header('Location:'.$url);
+  }	
+
+
+      // check validation
+  public function checkValidation($sporttb)
+      {    $noerror=true;
+          // Validate category        
+          if(empty($sporttb- &gt; category)){
+              $sporttb- &gt; category_msg = "Field is empty.";$noerror=false;
+          } elseif(!filter_var($sporttb- &gt; category, FILTER_VALIDATE_REGEXP, array("options"=&gt;array("regexp"=&gt;"/^[a-zA-Z\s]+$/")))){
+              $sporttb- &gt; category_msg = "Invalid entry.";$noerror=false;
+          }else{$sporttb- &gt; category_msg ="";}            
+          // Validate name            
+          if(empty($sporttb- &gt; name)){
+              $sporttb- &gt; name_msg = "Field is empty.";$noerror=false;     
+          } elseif(!filter_var($sporttb- &gt; name, FILTER_VALIDATE_REGEXP, array("options"=&gt;array("regexp"=&gt;"/^[a-zA-Z\s]+$/")))){
+              $sporttb- &gt; name_msg = "Invalid entry.";$noerror=false;
+          }else{$sporttb- &gt; name_msg ="";}
+          return $noerror;
+      }
+
+
+      // add new record
+  public function insert()
+  {
+          try{
+              $sporttb=new sports();
+              if (isset($_POST['addbtn'])) 
+              {   
+                  // read form value
+                  $sporttb- &gt; category = trim($_POST['category']);
+                  $sporttb- &gt; name = trim($_POST['name']);
+                  //call validation
+                  $chk=$this- &gt; checkValidation($sporttb);                    
+                  if($chk)
+                  {   
+                      //call insert record            
+                      $pid = $this - &gt;  objsm - &gt; insertRecord($sporttb);
+                      if($pid&gt;0){			
+                          $this- &gt; list();
+                      }else{
+                          echo "Somthing is wrong..., try again.";
+                      }
+                  }else
+                  {    
+                      $_SESSION['sporttbl0']=serialize($sporttb);//add session obj           
+                      $this- &gt; pageRedirect("view/insert.php");                
+                  }
+              }
+          }catch (Exception $e) 
+          {
+              $this- &gt; close_db();	
+              throw $e;
+          }
+      }
+
+
+      // update record
+      public function update()
+  {
+          try
+          {
+              
+              if (isset($_POST['updatebtn'])) 
+              {
+                  $sporttb=unserialize($_SESSION['sporttbl0']);
+                  $sporttb- &gt; id = trim($_POST['id']);
+                  $sporttb- &gt; category = trim($_POST['category']);
+                  $sporttb- &gt; name = trim($_POST['name']);                    
+                  // check validation  
+                  $chk=$this- &gt; checkValidation($sporttb);
+                  if($chk)
+                  {
+                      $res = $this - &gt;  objsm - &gt; updateRecord($sporttb);	                        
+                      if($res){			
+                          $this- &gt; list();                           
+                      }else{
+                          echo "Somthing is wrong..., try again.";
+                      }
+                  }else
+                  {         
+                      $_SESSION['sporttbl0']=serialize($sporttb);      
+                      $this- &gt; pageRedirect("view/update.php");                
+                  }
+              }elseif(isset($_GET["id"]) &amp;&amp; !empty(trim($_GET["id"]))){
+                  $id=$_GET['id'];
+                  $result=$this- &gt; objsm- &gt; selectRecord($id);
+                  $row=mysqli_fetch_array($result);  
+                  $sporttb=new sports();                  
+                  $sporttb- &gt; id=$row["id"];
+                  $sporttb- &gt; name=$row["name"];
+                  $sporttb- &gt; category=$row["category"];
+                  $_SESSION['sporttbl0']=serialize($sporttb);
+                  $this- &gt; pageRedirect('view/update.php');
+              }else{
+                  echo "Invalid operation.";
+              }
+          }
+          catch (Exception $e) 
+          {
+              $this- &gt; close_db();				
+              throw $e;
+          }
+      }
+
+
+      // delete record
+      public function delete()
+  {
+          try
+          {
+              if (isset($_GET['id'])) 
+              {
+                  $id=$_GET['id'];
+                  $res=$this- &gt; objsm- &gt; deleteRecord($id);                
+                  if($res){
+                      $this- &gt; pageRedirect('index.php');
+                  }else{
+                      echo "Somthing is wrong..., try again.";
+                  }
+              }else{
+                  echo "Invalid operation.";
+              }
+          }
+          catch (Exception $e) 
+          {
+              $this- &gt; close_db();				
+              throw $e;
+          }
+      }
+      public function list(){
+          $result=$this- &gt; objsm- &gt; selectRecord(0);
+          include "view/list.php";                                        
+      }
+  }
+? &gt;
+          </pre>
+
+
+          <b>Paso9. Define las siguientes vistas:</b>
+          <p class="align-justify">
+              Archivo insert.php
+          </p>
+          <pre class="prettyprinted linelous prettyprint" style="color: white;">&lt; ?php
+require '../model/sports.php'; 
+session_start();             
+$sporttb=isset($_SESSION['sporttbl0'])?unserialize($_SESSION['sporttbl0']):new sports();            
+? &gt;
+&lt; !DOCTYPE html &gt;
+&lt; html lang="en" &gt;
+&lt; head &gt;
+  &lt; meta charset="UTF-8" &gt;
+  &lt; title &gt;Create Record&lt; /title &gt;
+  &lt; link rel="stylesheet" href="../libs/bootstrap.css" &gt;
+  &lt; style type="text/css" &gt;
+      .wrapper{
+          width: 500px;
+          margin: 0 auto;
+      }
+  &lt; /style &gt;
+&lt; /head &gt;
+&lt; body &gt;
+  &lt; div class="wrapper" &gt;
+      &lt; div class="container-fluid" &gt;
+          &lt; div class="row" &gt;
+              &lt; div class="col-md-12" &gt;
+                  &lt; div class="page-header" &gt;
+                      &lt; h2 &gt;Add Sports&lt; /h2 &gt;
+                  &lt; /div &gt;
+                  &lt; p &gt;Please fill this form and submit to add sports record in the database.&lt; /p &gt;
+                  &lt; form action="../index.php?act=add" method="post" &gt;
+                      &lt; div class="form-group &lt; ?php echo (!empty($sporttb- &gt; category_msg)) ? 'has-error' : ''; ? &gt;" &gt;
+                          &lt; label &gt;Sport Category&lt; /label &gt;
+                          &lt; input type="text" name="category" class="form-control" value="&lt; ?php echo $sporttb- &gt; category; ? &gt;" &gt;
+                          &lt; span class="help-block" &gt;&lt; ?php echo $sporttb- &gt; category_msg;? &gt;&lt; /span &gt;
+                      &lt; /div &gt;
+                      &lt; div class="form-group &lt; ?php echo (!empty($sporttb- &gt; name_msg)) ? 'has-error' : ''; ? &gt;" &gt;
+                          &lt; label &gt;Sports Name&lt; /label &gt;
+                          &lt; input name="name" class="form-control" value="&lt; ?php echo $sporttb- &gt; name; ? &gt;" &gt;
+                          &lt; span class="help-block" &gt;&lt; ?php echo $sporttb- &gt; name_msg;? &gt;&lt; /span &gt;
+                      &lt; /div &gt;
+                      &lt; input type="submit" name="addbtn" class="btn btn-primary" value="Submit" &gt;
+                      &lt; a href="../index.php" class="btn btn-default" &gt;Cancel&lt; /a &gt;
+                  &lt; /form &gt;
+              &lt; /div &gt;
+          &lt; /div &gt;        
+      &lt; /div &gt;
+  &lt; /div &gt;
+&lt; /body &gt;
+&lt; /html &gt;
+          </pre>
+          <p class="align-justify">
+              list.php
+          </p>
+          <pre class="prettyprinted linelous prettyprint" style="color: white;">&lt; ?php session_unset();? &gt;
+&lt; !DOCTYPE html &gt;
+&lt; html lang="en" &gt;
+&lt; head &gt;
+  &lt; meta charset="UTF-8" &gt;
+  &lt; title &gt;Dashboard&lt; /title &gt;
+  &lt; link href="~/../libs/fontawesome/css/font-awesome.css" rel="stylesheet" / &gt;    
+  &lt; link rel="stylesheet" href="~/../libs/bootstrap.css" &gt; 
+  &lt; script src="~/../libs/jquery.min.js" &gt;&lt; /script &gt;
+  &lt; script src="~/../libs/bootstrap.js" &gt;&lt; /script &gt;
+  &lt; style type="text/css" &gt;
+      .wrapper{
+          width: 650px;
+          margin: 0 auto;
+      }
+      .page-header h2{
+          margin-top: 0;
+      }
+      table tr td:last-child a{
+          margin-right: 15px;
+      }
+  &lt; /style &gt;
+  &lt; script type="text/javascript" &gt;
+      $(document).ready(function(){
+          $('[data-toggle="tooltip"]').tooltip();   
+      });
+  &lt; /script &gt;
+&lt; /head &gt;
+&lt; body &gt;
+  &lt; div class="wrapper" &gt;
+      &lt; div class="container-fluid" &gt;
+          &lt; div class="row" &gt;
+              &lt; div class="col-md-12" &gt;
+                  &lt; div class="page-header clearfix" &gt;
+                      &lt; a href="index.php" class="btn btn-success pull-left" &gt;Home&lt; /a &gt;
+                      &lt; h2 class="pull-left" &gt;Sports Details&lt; /h2 &gt;
+                      &lt; a href="view/insert.php" class="btn btn-success pull-right" &gt;Add New Sports&lt; /a &gt;
+                  &lt; /div &gt;
+                  &lt; ?php
+                      if($result- &gt; num_rows &gt; 0){
+                          echo " &lt; table class='table table-bordered table-striped' &gt; ";
+                              echo " &lt; thead &gt; ";
+                                  echo " &lt; tr &gt; ";
+                                      echo " &lt; th &gt; # &lt; /th &gt; ";                                        
+                                      echo " &lt; th &gt; Sports Category &lt; /th &gt; ";
+                                      echo " &lt; th &gt; Sports Name &lt; /th &gt; ";
+                                      echo " &lt; th &gt; Action &lt; /th &gt; ";
+                                  echo " &lt; /tr &gt; ";
+                              echo " &lt; /thead &gt; ";
+                              echo " &lt; tbody &gt; ";
+                              while($row = mysqli_fetch_array($result)){
+                                  echo " &lt; tr &gt; ";
+                                      echo " &lt; td &gt; " . $row['id'] . " &lt; /td &gt; ";                                        
+                                      echo " &lt; td &gt; " . $row['category'] . " &lt; /td &gt; ";
+                                      echo " &lt; td &gt; " . $row['name'] . " &lt; /td &gt; ";
+                                      echo " &lt; td &gt; ";
+                                      echo " &lt; a href='index.php?act=update&amp;id=". $row['id'] ."' title='Update Record' data-toggle='tooltip' &gt; &lt; i class='fa fa-edit' &gt; &lt; /i &gt; &lt; /a &gt;";
+                                      echo " &lt; a href='index.php?act=delete&amp;id=". $row['id'] ."' title='Delete Record' data-toggle='tooltip' &gt; &lt; i class='fa fa-trash' &gt; &lt; /i &gt; &lt; /a &gt;";
+                                      echo " &lt; /td &gt; ";
+                                  echo " &lt; /tr &gt; ";
+                              }
+                              echo " &lt; /tbody &gt; ";                            
+                          echo " &lt; /table &gt; ";
+                          // Free result set
+                          mysqli_free_result($result);
+                      } else{
+                          echo " &lt; p class='lead' &gt; &lt; em &gt; No records were found. &lt; /em &gt; &lt; /p &gt; ";
+                      }
+                  ?&gt;
+              &lt; /div &gt;
+          &lt; /div &gt;        
+      &lt; /div &gt;
+  &lt; /div &gt;
+&lt; /body &gt;
+&lt; /html &gt;
+          </pre>
+
+          <p class="align-justify">
+              update.php
+          </p>
+          <pre class="prettyprint linelous prettyprinted" style="color: white;">&lt; ?php
+require '../model/sports.php'; 
+session_start();             
+$sporttb=isset($_SESSION['sporttbl0'])?unserialize($_SESSION['sporttbl0']):new sports();            
+? &gt;
+&lt; !DOCTYPE html &gt;
+&lt; html lang="en" &gt;
+&lt; head &gt;
+  &lt; meta charset="UTF-8" &gt;
+  &lt; title &gt;Create Record&lt; /title &gt;
+  &lt; link rel="stylesheet" href="../libs/bootstrap.css" &gt;
+  &lt; style type="text/css" &gt;
+      .wrapper{
+          width: 500px;
+          margin: 0 auto;
+      }
+  &lt; /style &gt;
+&lt; /head &gt;
+&lt; body &gt;
+  &lt; div class="wrapper" &gt;
+      &lt; div class="container-fluid" &gt;
+          &lt; div class="row" &gt;
+              &lt; div class="col-md-12" &gt;
+                  &lt; div class="page-header" &gt;
+                      &lt; h2 &gt;Update Sports&lt; /h2 &gt;
+                  &lt; /div &gt;
+                  &lt; p &gt;Please fill this form and submit to add sports record in the database.&lt; /p &gt;
+                  &lt; form action="../index.php?act=update" method="post" &gt;
+                      &lt; div class="form-group &lt; ?php echo (!empty($sporttb- &gt; category_msg)) ? 'has-error' : ''; ? &gt; " &gt;
+                          &lt; label &gt; Sport Category &lt; /label &gt;
+                          &lt; input type="text" name="category" class="form-control" value=" &lt; ?php echo $sporttb- &gt; category; ? &gt; " &gt;
+                          &lt; span class="help-block" &gt; &lt; ?php echo $sporttb- &gt; category_msg;? &gt; &lt; /span &gt;
+                      &lt; /div &gt; 
+                      &lt; div class="form-group &lt; ?php echo (!empty($sporttb- &gt; name_msg)) ? 'has-error' : ''; ? &gt; " &gt;
+                          &lt; label &gt; Sports Name &lt; /label &gt; 
+                          &lt; input type="text" name="name" class="form-control" value=" &lt; ?php echo $sporttb- &gt; name; ? &gt; " &gt;
+                          &lt; span class="help-block" &gt; &lt; ?php echo $sporttb- &gt; name_msg;? &gt; &lt; /span &gt;
+                      &lt; /div &gt;
+                      &lt; input type="hidden" name="id" value=" &lt; ?php echo $sporttb- &gt; id; ? &gt; "/ &gt;
+                      &lt; input type="submit" name="updatebtn" class="btn btn-primary" value="Submit" &gt;
+                      &lt; a href="../index.php" class="btn btn-default" &gt; Cancel &lt; /a &gt;
+                  &lt; /form &gt;
+              &lt; /div &gt;
+          &lt; /div &gt;        
+      &lt; /div &gt;
+  &lt; /div &gt;
+&lt; /body &gt;
+&lt; /html &gt; 
+          </pre>
+
+          <b>Paso10. Probar en el navegador:</b>
+          <p class="align-justify">
+              <img src="/resources/upgop/programacionweb/crud_php1.png" alt="" with="300">
+          </p>
+          <p class="align-justify">
+              <img src="/resources/upgop/programacionweb/crud_php2.png" alt="" with="300">
+          </p>
+
+          <b>Descarga los archivos de la práctica en el siguiente enlace:</b>
+          <p class="align-justify">
+              <a href="/resources/upgop/programacionweb/mvclesson.zip" target="_blank">
+                  <img src="http://tolinware.com/resources/parapdf.png" alt="" width="300">
+              </a>
+          </p>
+  </div>
+</div>
+</div>									</div>
+              </div>
+            </div>
+            <!-----acordion---------->
+
+             <!--acordion-->
+  
+        <div class="accordion" id="accordionExample">
+          <div class="card">
+            <div class="card-header" id="headingTema3">
+              <h2 class="mb-0">
+                <button class="btn btn-outline-success" type="button" data-toggle="collapse" data-target="#collapseTema3" aria-expanded="true" aria-controls="collapseTema3">
+                  Tema 3 - CRUD Application with PHP, PDO, and MySQL
+                </button>
+              </h2>
+            </div>
+            <div id="collapseTema3" class="collapse" aria-labelledby="headingTema3" data-parent="#accordionExample">
+              <div class="card-body">
+                <div class="content padding10" style="display: block;">
+                  <h1 style="color: coral;">Tema 3 - CRUD Application with PHP, PDO, and MySQL</h1>
+
+<div class="grid">
+<div class="row cells2" style="color: white;">
+  
+  <div class="cell"> 
+    <b>Da clic en la siguiente ilustración para acceder al tutorial completo para elaborar un CRUD Application con PHP, PDO y MySQL:</b>
+    <p class="align-justify">
+      <a href="https://codeshack.io/crud-application-php-pdo-mysql/" target="_blank">
+        <img src="http://tolinware.com/resources/parapdf.png" alt="" width="300">
+      </a>
+    </p>
+
+          <b>Da clic en la siguiente ilustración para acceder al video tutorial completo para elaborar un CRUD Application con PHP, PDO y MySQL:</b>
+    <p class="align-justify">
+      <a href="https://drive.google.com/file/d/1avrlGwJ0SORFngA4Y0oYrsOhOtS8j6mO/view?usp=sharing" target="_blank">
+        <img src="http://tolinware.com/resources/paravideos.png" alt="" width="300">
+      </a>
+    </p>
+  </div>
+</div>
+</div>									</div>
+              </div>
+            </div>
+            <!-----acordion---------->
+
+             <!--acordion-->
+  
+        <div class="accordion" id="accordionExample">
+          <div class="card">
+            <div class="card-header" id="headingEval">
+              <h2 class="mb-0">
+                <button class="btn btn-outline-success" type="button" data-toggle="collapse" data-target="#collapseEval" aria-expanded="true" aria-controls="collapseEval">
+                  Evaluación
+                </button>
+              </h2>
+            </div>
+            <div id="collapseEval" class="collapse" aria-labelledby="headingEval" data-parent="#accordionExample">
+              <div class="card-body">
+                <div class="content padding10" style="display: block;">
+                  <h1 style="color: coral"> Evaluación</h1>
+
+<div class="grid">
+<div class="row cells2" style="color: white;">
+  
+  <div class="cell"> 
+    <b>Indicaciones:</b>
+    <p class="align-justify">
+      Elabora un CRUD con php y mysql para registrar los clientes de una financiera. Del cliente nos interesa conocer su id, nombre, apellido paterno, apellido materno, dirección compuesta de calle, número exterior e interior, colonia, código postal, rfc, curp, oficio, sueldo mensual y si cuenta con prestaciones imss, issste o particulares. Cada cliente tiene derecho a varios préstamos, pero los préstamos solo se le asigna a un solo cliente. Del préstamo nos interesa conocer el número, importe, intereses, forma de pago (quincenal o mensual), años a pagarlo (1, 2, 3 años) y su situación (vigente, liquidado, con problemas de cobro, critico). La idea esque se puedan consultar los clientes y los préstamos, pero también que a través del número de cliente se pueda saber cuántos préstamos tiene en el momento y su situación.
+    </p>
+  </div>
+</div>
+</div>									</div>
+              </div>
+            </div>
+            <!-----acordion---------->   
+
+            <footer id="footer" class="py-3 bg-dark text-light">
+              <div class="footer-main" id="yui_3_17_2_1_1606314023664_20">
+                  <div class="container">
+                      <div class="row">
+                          <div class="col-md-3">
+                              <div class="footer-desc">
+                                  <div class="logo-footer">
+                                      <a href="#">
+                                          <img src="data:image/jpeg;base64,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" width="183" height="150" alt="Eguru">
+                                      </a>
+                                  </div>
+                                  <p></p>
+                              </div>
+                          </div>
+                          <div class="col-md-3">
+                              <div class="footer-nav">
+                                  <h4>Enlaces Rápidos</h4>
+                                  <ul>
+                                     <li><a href="#">Inicio</a></li>
+            <li><a href="#acerca">Acerca de</a></li>
+            <li><a href="#reglamento">Reglamento</a></li>
+            <li><a href="#ITI">ITI</a></li>
+            <li><a href="#mecatronica">mecatrónica</a></li>
+            
+                                  </ul>
+                              </div>
+                          </div>
+                          <div class="col-md-3">
+                              <div class="social-media">
+                                  <h4>Síganos</h4>
+                                  <ul>
+                                      <li class="smedia-01">
+                                          <a href="https://www.facebook.com/aaron.i.salazar" target="_blank">
+                                              <span class="media-icon">
+                                              <i class="fa fa-facebook-f"></i>
+                                              </span>
+                                              <span class="media-name">Facebook</span>
+                                          </a>
+                                      </li>
+            
+                                      <li class="smedia-02">
+                                          <a href="http://www.tolinware.com" target="_blank">
+                                              <span class="media-icon ">
+                                              <i class="fa fa-twitter"></i>
+                                              </span>
+                                              <span class="media-name">tolinware</span>
+                                          </a>
+                                      </li>
+            
+                                  </ul>
+                              </div>
+                          </div>
+                          <div class="col-md-3">
+                              <div class="footer-contact">
+                                  <h4>Contacto</h4>
+                                  <p> Bermejillo, Durango, Mexico. calle Jesus Gonzalez Ortega #21</p>
+                                      <p><i class="fa fa-phone-square"></i>Teléfono: (871) 519-3827</p>
+            
+                                      <p><i class="fa fa-envelope"></i>
+                                      E-mail: <a class="mail-link" href="mailto:luisavila200@gmail.com">luisavila200@gmail.com</a>
+                                      </p>
+            
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+            <div class="footer-foot">
+              <div class="container"><p class="text-center">WICHOLANDIA</p></div>
+            </div>
+            </footer>
+</body>
+</html>
